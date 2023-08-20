@@ -1,0 +1,105 @@
+from Test_Travel.Votpusk_fuctional_automation_test.VOTPUSK.Hotel_main.hotels_second_page.hotel_filters.hotel_filters import FiltersLocators
+from Test_Travel.Votpusk_fuctional_automation_test.VOTPUSK.Hotel_main.hotels_second_page.tests.TestBase import BaseTest
+from Test_Travel.Votpusk_fuctional_automation_test.VOTPUSK.Hotel_main.hotels_second_page.second_page_form.second_page_form import SecondFormLocators
+from Test_Travel.Votpusk_fuctional_automation_test.VOTPUSK.Hotel_main.hotels_second_page.config.configuration import TestDataSecondPage
+
+
+class TestSecondHotelPage(BaseTest):
+    def test_filters(self, driver):
+        driver.get('https://www.votpusk.ru/hotels/russia/moscow')
+        close_modal = FiltersLocators(driver)
+        close_modal.close_modal()
+        load_page = FiltersLocators(driver)
+        load_page.load_page()
+        scroll_to_average_price_slider = FiltersLocators(driver)
+        scroll_to_average_price_slider.scroll_to_average_price_slider(-10, 50)
+        assert_hidden_arrow_clickable = FiltersLocators(driver)
+        assert_hidden_arrow_clickable.assert_hidden_arrow_clickable()
+        assert_hidden_arrow = FiltersLocators(driver)
+        assert_hidden_arrow.assert_hidden_arrow()
+
+    def test_hotel_rate(self, driver):
+        driver.get('https://www.votpusk.ru/hotels/russia/moscow')
+        close_modal = FiltersLocators(driver)
+        close_modal.close_modal()
+        load_page = FiltersLocators(driver)
+        load_page.load_page()
+        window_scroll_into_view_star_rating = FiltersLocators(driver)
+        window_scroll_into_view_star_rating.window_scroll_into_view_star_rating()
+        assert_star_rating_check_boxes_0 = FiltersLocators(driver)
+        assert_star_rating_check_boxes_0.assert_star_rating_check_boxes_0()
+        assert_star_rating_check_boxes_1 = FiltersLocators(driver)
+        assert_star_rating_check_boxes_1.assert_star_rating_check_boxes_1()
+        assert_star_rating_check_boxes_2 = FiltersLocators(driver)
+        assert_star_rating_check_boxes_2.assert_star_rating_check_boxes_2()
+        assert_star_rating_check_boxes_3 = FiltersLocators(driver)
+        assert_star_rating_check_boxes_3.assert_star_rating_check_boxes_3()
+        assert_star_rating_check_boxes_4 = FiltersLocators(driver)
+        assert_star_rating_check_boxes_4.assert_star_rating_check_boxes_4()
+        assert_star_rating_check_boxes_5 = FiltersLocators(driver)
+        assert_star_rating_check_boxes_5.assert_star_rating_check_boxes_5()
+
+    def test_rating_block(self, driver):
+        driver.get('https://www.votpusk.ru/hotels/russia/moscow')
+        close_modal = FiltersLocators(driver)
+        close_modal.close_modal()
+        load_page = FiltersLocators(driver)
+        load_page.load_page()
+        assert_active_button_rating_hotel = FiltersLocators(driver)
+        assert_active_button_rating_hotel.assert_active_button_rating_hotel()
+        assert_rating_hotel_6 = FiltersLocators(driver)
+        assert_rating_hotel_6.assert_rating_hotel_6()
+        assert_rating_hotel_7 = FiltersLocators(driver)
+        assert_rating_hotel_7.assert_rating_hotel_7()
+        assert_rating_hotel_8 = FiltersLocators(driver)
+        assert_rating_hotel_8.assert_rating_hotel_8()
+        assert_rating_hotel_9 = FiltersLocators(driver)
+        assert_rating_hotel_9.assert_rating_hotel_9()
+
+    def test_price_slider(self, driver):
+        driver.get('https://www.votpusk.ru/hotels/russia/moscow')
+        close_modal = FiltersLocators(driver)
+        close_modal.close_modal()
+        load_page = FiltersLocators(driver)
+        load_page.load_page()
+        scroll_into_view_distance_roller = FiltersLocators(driver)
+        scroll_into_view_distance_roller.scroll_into_view_distance_roller()
+        distance_slider = FiltersLocators(driver)
+        distance_slider.distance_slider(-100, 200)
+        load_page = FiltersLocators(driver)
+        load_page.load_page()
+
+    def test_apart_type(self, driver):
+        driver.get('https://www.votpusk.ru/hotels/russia/moscow')
+        close_modal = FiltersLocators(driver)
+        close_modal.close_modal()
+        load_page = FiltersLocators(driver)
+        load_page.load_page()
+        scroll_into_view_type_of_apart = FiltersLocators(driver)
+        scroll_into_view_type_of_apart.scroll_into_view_type_of_apart()
+        assert_clickable_boxes = FiltersLocators(driver)
+        assert_clickable_boxes.assert_clickable_boxes()
+        assert_clickable_boxes_2 = FiltersLocators(driver)
+        assert_clickable_boxes_2.assert_clickable_boxes_2()
+
+    def test_amenities_hotel(self, driver):
+        driver.get('https://www.votpusk.ru/hotels/russia/moscow')
+        close_modal = FiltersLocators(driver)
+        close_modal.close_modal()
+        load_page = FiltersLocators(driver)
+        load_page.load_page()
+        assert_clickable_check_boxes = FiltersLocators(driver)
+        assert_clickable_check_boxes.assert_clickable_check_boxes()
+        assert_clickable_check_boxes_4 = FiltersLocators(driver)
+        assert_clickable_check_boxes_4.assert_clickable_check_boxes_4()
+
+    def test_amenities_room(self, driver):
+        driver.get('https://www.votpusk.ru/hotels/russia/moscow')
+        close_modal = FiltersLocators(driver)
+        close_modal.close_modal()
+        load_page = FiltersLocators(driver)
+        load_page.load_page()
+        scroll_into_view_amenities_room = FiltersLocators(driver)
+        scroll_into_view_amenities_room.scroll_into_view_amenities_room()
+        assert_clickable_checkboxes = FiltersLocators(driver)
+        assert_clickable_checkboxes.assert_clickable_checkboxes()
